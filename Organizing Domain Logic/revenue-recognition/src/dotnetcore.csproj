@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DataAccess\**" />
+    <EmbeddedResource Remove="DataAccess\**" />
+    <None Remove="DataAccess\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Program.cs~RF129de1ac.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="DataAccess\DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
